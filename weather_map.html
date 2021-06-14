@@ -3,44 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <title>Weather Map Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+          crossorigin="anonymous">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css" rel="stylesheet"/>
     <link rel="stylesheet"
           href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css"
           type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body class="bg-dark">
+  <body class="bg-light">
+    <div id="nav" class="px-3 py-2">
 
-    <div class="container">
-      <nav class="navbar navbar-light bg-primary justify-content-between">
-        <a class="navbar-brand text-white" href="#">WeatherDotCom</a>
-        <span id="location" class="navbar-text text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
-				</span>
-      </nav>
-      <div id="forecast-container" class="row justify-content-around">
+
+
+        </div>
 
       </div>
 
-
-      <div id="map"></div>
     </div>
 
+    <div id="dadDiv" class="bg-light">
+      <div id="weatherOut" class="text-center mt-5 "></div>
+      <div id="search-bar" class="mt-4"></div>
+      <div id="mapMain" class="mt-4"></div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
+
+    </div>
+
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+            integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+            crossorigin="anonymous"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
-    <link rel="stylesheet"
-          href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css"
-          type="text/css">
-    <script src="js/mapbox-geocoder.js"></script>
-    <script src="js/weathermap.js"></script>
-    <script src="js/mapbox.js"></script>
-    <script src="js/jquery-util.js"></script>
+
+    <script src="js/dom-weather-loader.js"></script>
+    <script src="js/mapbox-utils.js"></script>
+    <script src="js/weathermap-utils.js"></script>
   </body>

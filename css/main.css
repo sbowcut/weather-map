@@ -1,0 +1,21 @@
+
+#mapMain {
+    width: 80%;
+    height: 400px;
+    margin: 50px auto;
+}
+.mapboxgl-ctrl-geocoder {
+    max-width: none;
+    width: 90%;
+    margin: auto;
+}
+
+#weatherOut{
+    width: 80%;
+    margin: auto;
+}
+#weatherIn{
+    width: 100%;
+    margin: auto;
+}
+
