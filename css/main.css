@@ -1,4 +1,6 @@
-
+body{
+    background-color: #3B3A39;
+}
 #mapMain {
     width: 80%;
     height: 400px;
@@ -6,16 +8,19 @@
 }
 .mapboxgl-ctrl-geocoder {
     max-width: none;
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
 #weatherOut{
     width: 80%;
     margin: auto;
+    /*color: white;*/
 }
 #weatherIn{
     width: 100%;
     margin: auto;
 }
-
+#cityMain{
+    color: white;
+}
