@@ -11,7 +11,7 @@ function appendWeather(obj) {
                             <ul class="card-body list-unstyled">
                             <li class="currentTemp"></li>
                                 <li>High: ${parseFloat(day.main.temp_max).toFixed(0)}&deg; </li>
-                                <li>Low: ${parseFloat(day.main.temp_min).toFixed(0) - 11}&deg; </li>
+                                <li>Low: ${parseFloat(day.main.temp_min).toFixed(0) - 31}&deg; </li>
                                 <li>Humidity: ${parseFloat(day.main.humidity).toFixed(0)}&deg; </li>
                             </ul>
                             <div class="card-footer">Forecast: <br> ${day.weather[0].description}</div>
